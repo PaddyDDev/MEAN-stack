@@ -1,0 +1,20 @@
+<article class="panel panel-default">
+    <div class="panel-body">
+        {{message.content}}
+    </div>
+    <footer class="panel-footer">
+        <div class="author">
+            {{message.username}}
+        </div>
+        <div class="config">
+            <a (click)="onEdit()">Edit</a>
+            <a (click)="onDelete()">Delete</a>
+<!--
+            keeping the href="#" below causes a reload of the page
+-->
+            <!--<a href="#"(click)="onEdit()">Edit</a>
+            <a href="#">Delete</a>-->
+
+        </div>
+    </footer>
+</article>
